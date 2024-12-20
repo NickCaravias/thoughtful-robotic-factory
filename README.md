@@ -5,6 +5,8 @@ This is Nick Caravias's submission to the thoughtful AI sorting question.
 I typed the parametes to be floats, based on the description this made the most sense because of the decimals that 
 could exist in the height, weight, etc.
 
+If the parameter is a string the method will return rejected.
+
 ## How to use  
 ### Test the method independently
 To test the method independetly, simply import the sort method from the sort.py file and pass in the parameters. 

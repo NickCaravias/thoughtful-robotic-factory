@@ -11,6 +11,10 @@ def sort(width: float, height: float, length: float, mass: float) -> str:
     @param mass: float - The mass of the package in kilograms.
     @return: string - The category of the package.
     '''
+    
+    # check if any parameter is not a number
+    if not all(isinstance(x, (int, float)) for x in [width, height, length, mass]):
+        return "rejected"
 
     # if any parameter is negative, return rejected because you cannot have a negative dimension or mass
     if width < 0 or height < 0 or length < 0 or mass < 0:
